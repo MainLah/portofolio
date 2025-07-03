@@ -21,56 +21,13 @@
 		class="relative h-[calc(100vh-1rem)] w-[calc(100vw-1.5rem)] overflow-hidden rounded-[3rem] bg-amber-200 shadow-xl"
 	>
 		<div class="pointer-events-none absolute inset-0 hidden select-none md:block">
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
-			<h1
-				class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
-			>
-				RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
-			</h1>
+			{#each Array(10) as _}
+				<h1
+					class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
+				>
+					RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
+				</h1>
+			{/each}
 		</div>
 		<div class="relative z-10 flex flex-col items-center justify-center py-16 md:py-32">
 			<h1
