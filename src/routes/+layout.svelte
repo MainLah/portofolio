@@ -13,7 +13,7 @@
 	];
 </script>
 
-<div class="absolute inset-x-0 top-8 z-50 flex h-[10vh] w-screen items-center justify-center">
+<div class="fixed inset-x-0 top-8 z-50 flex h-[10vh] w-screen items-center justify-center">
 	<nav class="max-w-screen-lg rounded-4xl border border-zinc-300 bg-white px-8 py-3 shadow-lg">
 		<ul class="flex items-center justify-center gap-4">
 			{#each navItems as item}
