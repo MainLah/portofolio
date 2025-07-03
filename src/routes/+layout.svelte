@@ -31,7 +31,7 @@
 		{ 'opacity-100': showNavbar }
 	]}
 >
-	<nav class="max-w-screen-lg bg-lime-950 px-8 py-3">
+	<nav class="max-w-screen-lg">
 		<ul class="flex items-center justify-center gap-4 text-amber-200">
 			{#each navItems as item}
 				<NavItem text={item.text} href={item.href} />
