@@ -46,16 +46,16 @@ export const contacts = [
 	{
 		alt: 'Instagram',
 		href: 'https://instagram.com/rendrakusumab',
-		svg: 'instagram-rounded-svgrepo-com.svg'
+		svg: 'instagram.svg'
 	},
 	{
 		alt: 'LinkedIn',
 		href: 'https://linkedin.com/rendrakusumab',
-		svg: 'linkedin-svgrepo-com.svg'
+		svg: 'linkedin.svg'
 	},
 	{
 		alt: 'Email',
 		href: 'mailto:rendrakusumab@gmail.com',
-		svg: 'mail-svgrepo-com.svg'
+		svg: 'mail.svg'
 	}
 ];

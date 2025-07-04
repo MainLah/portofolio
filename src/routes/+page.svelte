@@ -200,13 +200,7 @@
 				>
 					{#each contacts as contact}
 						<a href={contact.href} class="duration-100 hover:-translate-y-4">
-							<img
-								src={contact.svg}
-								alt={contact.alt}
-								class={contact.alt.toLowerCase() === 'linkedin'
-									? 'w-[45px] md:w-[90px]'
-									: 'w-[30px] md:w-[60px]'}
-							/>
+							<img src={contact.svg} alt={contact.alt} class="size-[30px] md:size-[60px]" />
 						</a>
 					{/each}
 				</div>
