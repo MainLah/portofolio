@@ -41,3 +41,21 @@ export const projects = [
 		className: 'border-b border-amber-200'
 	}
 ];
+
+export const contacts = [
+	{
+		alt: 'Instagram',
+		href: 'https://instagram.com/rendrakusumab',
+		svg: 'instagram-rounded-svgrepo-com.svg'
+	},
+	{
+		alt: 'LinkedIn',
+		href: 'https://linkedin.com/rendrakusumab',
+		svg: 'linkedin-svgrepo-com.svg'
+	},
+	{
+		alt: 'Email',
+		href: 'mailto:rendrakusumab@gmail.com',
+		svg: 'mail-svgrepo-com.svg'
+	}
+];

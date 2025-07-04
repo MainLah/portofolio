@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Marquee from 'svelte-fast-marquee';
 	import Projects from '$lib/components/projects.svelte';
-	import { tools1, tools2, projects } from '$lib';
+	import { tools1, tools2, projects, contacts } from '$lib';
 </script>
 
 <section id="home" class="flex min-h-screen items-center justify-center">
@@ -115,7 +115,7 @@
 			</span>
 		</div>
 		<div class="flex flex-col items-end text-end">
-			<h1 class="pb-6 text-8xl font-bold text-amber-200">Projects</h1>
+			<h1 class="pb-6 text-8xl font-bold text-amber-200">projects</h1>
 			<p class="w-3/5 text-lg text-amber-200">
 				Browse through a variety of works that I have done in the past.
 			</p>
@@ -131,5 +131,44 @@
 				className={project?.className}
 			/>
 		{/each}
+	</div>
+</section>
+<section id="contacts" class="flex min-h-screen items-center justify-center">
+	<div
+		class="relative h-[calc(100vh-1rem)] w-[calc(100vw-1.5rem)] overflow-hidden rounded-[3rem] bg-amber-200 shadow-xl"
+	>
+		<div class="pointer-events-none absolute inset-0 hidden select-none md:block">
+			{#each Array(10) as _}
+				<h1
+					class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
+				>
+					RTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIOPORTFOLIO
+				</h1>
+			{/each}
+		</div>
+		<div class="relative z-10 flex flex-col items-center justify-center py-16 md:py-32">
+			<h1
+				class="xs:text-4xl text-center text-3xl leading-tight font-extrabold tracking-tight text-black drop-shadow-md sm:text-5xl md:text-6xl lg:text-7xl"
+			>
+				CONTACT ME
+			</h1>
+		</div>
+		<div class="relative z-100 flex w-full justify-center">
+			<div class="h-[10vh] max-w-screen-sm">
+				<div
+					class="flex h-full w-full items-center justify-evenly gap-16 rounded-xl bg-lime-900 px-8"
+				>
+					{#each contacts as contact}
+						<a href={contact.href} class="duration-100 hover:-translate-y-4">
+							<img
+								src={contact.svg}
+								alt={contact.alt}
+								width={contact.alt.toLowerCase() === 'linkedin' ? '90' : '60'}
+							/>
+						</a>
+					{/each}
+				</div>
+			</div>
+		</div>
 	</div>
 </section>

@@ -15,9 +15,11 @@
 
 	function handleScroll() {
 		const homeSection = document.getElementById('home');
-		if (homeSection) {
-			const rect = homeSection.getBoundingClientRect();
-			showNavbar = rect.bottom <= 0;
+		const contactSection = document.getElementById('contacts');
+		if (homeSection && contactSection) {
+			const rect1 = homeSection.getBoundingClientRect();
+			const rect2 = contactSection.getBoundingClientRect();
+			showNavbar = rect1.bottom <= 0 && rect2.top >= 0;
 		}
 	}
 </script>
