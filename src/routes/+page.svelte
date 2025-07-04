@@ -28,24 +28,34 @@
 			>
 				A WEB DEVELOPER
 			</h2>
+			<img
+				src="down-sm-svgrepo-com.svg"
+				alt="Scroll Down"
+				class="mt-48 w-[100px] animate-bounce md:w-[160px]"
+			/>
 		</div>
 	</div>
 </section>
-<section id="about" class="flex min-h-screen flex-col items-center justify-center gap-16 pt-48">
+<section
+	id="about"
+	class="flex flex-col items-center justify-center gap-16 pt-12 md:min-h-screen md:pt-48"
+>
 	<div class="flex w-full flex-col items-center gap-5">
-		<div class="flex w-2/5 justify-between">
-			<h1 class="text-8xl font-bold text-amber-200">about</h1>
-			<div class="group -mt-10 flex items-center">
+		<div
+			class="flex w-full flex-col items-center justify-between md:w-2/5 md:flex-row md:items-start"
+		>
+			<h1 class="text-7xl font-bold text-amber-200 md:text-8xl">about</h1>
+			<div class="group flex items-center md:-mt-10">
 				<a
 					href="https://drive.google.com/file/d/13mZvF7givtMcR36J0V1Cc3nkM1nXLmv0/view?usp=sharing"
 					target="_blank"
-					class="inline rounded-[2rem] border border-amber-200 px-6 py-3 text-lg text-amber-200 group-hover:bg-lime-900"
+					class="text-md inline rounded-[2rem] border border-amber-200 px-3 py-1 text-nowrap text-amber-200 group-hover:bg-lime-900 md:px-6 md:py-3 md:text-lg"
 				>
 					Curriculum Vitae
 				</a>
 
 				<span
-					class="rotate-z-90 cursor-pointer rounded-full border border-amber-200 px-3 py-3 group-hover:bg-lime-900"
+					class="rotate-z-90 cursor-pointer rounded-full border border-amber-200 p-1 group-hover:bg-lime-900 md:px-3 md:py-3"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -63,8 +73,8 @@
 				</span>
 			</div>
 		</div>
-		<div class="flex w-1/3 justify-end">
-			<p class="w-3/5 text-lg text-amber-200">
+		<div class="flex w-full md:w-1/3 md:justify-end">
+			<p class="w-full text-center text-lg text-amber-200 md:w-3/5 md:text-start">
 				Welcome to my portfolio. I am Rendra Kusuma Blikololo, a fullstack developer who loves
 				learning new technologies.
 			</p>
@@ -74,30 +84,33 @@
 		<div class="h-[50vh] w-full">
 			<Marquee speed={60} play={true}>
 				{#each tools1 as icon}
-					<img src={icon} alt={icon} width="150" class="mx-25 my-4" />
+					<img src={icon} alt={icon} class="mx-5 my-4 w-[50px] md:mx-25 md:w-[150px]" />
 				{/each}
 			</Marquee>
 			<Marquee speed={60} play={true} direction="right">
 				{#each tools2 as icon}
-					<img src={icon} alt={icon} width="150" class="mx-25 my-4" />
+					<img src={icon} alt={icon} class="mx-5 my-4 w-[50px] md:mx-25 md:w-[150px]" />
 				{/each}
 			</Marquee>
 		</div>
 	</div>
 </section>
-<section id="projects" class="mt-16 flex min-h-screen flex-col items-center justify-center gap-16">
-	<div class="flex w-full justify-center gap-32">
-		<div class="group mt-26 flex items-center">
+<section
+	id="projects"
+	class="flex min-h-screen flex-col items-center justify-center gap-16 md:mt-16"
+>
+	<div class="flex w-full flex-col justify-center gap-4 md:flex-row md:gap-32">
+		<div class="group flex items-center justify-center md:mt-26 md:justify-start">
 			<a
 				href="https://github.com/MainLah"
 				target="_blank"
-				class="inline rounded-[2rem] border border-amber-200 px-6 py-3 text-lg text-amber-200 group-hover:bg-lime-900"
+				class="inline rounded-[2rem] border border-amber-200 px-3 py-1 text-lg text-amber-200 group-hover:bg-lime-900 md:px-6 md:py-3"
 			>
 				View All
 			</a>
 
 			<span
-				class="rotate-z-90 cursor-pointer rounded-full border border-amber-200 px-3 py-3 group-hover:bg-lime-900"
+				class="rotate-z-90 cursor-pointer rounded-full border border-amber-200 p-1 group-hover:bg-lime-900 md:px-3 md:py-3"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -114,9 +127,9 @@
 				>
 			</span>
 		</div>
-		<div class="flex flex-col items-end text-end">
-			<h1 class="pb-6 text-8xl font-bold text-amber-200">projects</h1>
-			<p class="w-3/5 text-lg text-amber-200">
+		<div class="flex flex-col items-center md:items-end md:text-end">
+			<h1 class="pb-6 text-7xl font-bold text-amber-200 md:text-8xl">projects</h1>
+			<p class="w-full text-center text-lg text-amber-200 md:w-3/5 md:text-start">
 				Browse through a variety of works that I have done in the past.
 			</p>
 		</div>
@@ -154,9 +167,9 @@
 			</h1>
 		</div>
 		<div class="relative z-100 flex w-full justify-center">
-			<div class="h-[10vh] max-w-screen-sm">
+			<div class="h-full max-w-screen-sm md:h-[10vh]">
 				<div
-					class="flex h-full w-full items-center justify-evenly gap-16 rounded-xl bg-lime-900 px-8"
+					class="flex h-full w-full flex-col items-center justify-evenly gap-16 rounded-xl bg-lime-900 px-2 py-4 md:flex-row md:px-8"
 				>
 					{#each contacts as contact}
 						<a href={contact.href} class="duration-100 hover:-translate-y-4">
