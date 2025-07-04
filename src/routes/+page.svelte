@@ -1,19 +1,7 @@
 <script lang="ts">
 	import Marquee from 'svelte-fast-marquee';
-	const tools1 = [
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg',
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg',
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg'
-	];
-	const tools2 = [
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
-		'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg'
-	];
+	import Projects from '$lib/components/projects.svelte';
+	import { tools1, tools2, projects } from '$lib';
 </script>
 
 <section id="home" class="flex min-h-screen items-center justify-center">
@@ -49,7 +37,8 @@
 			<h1 class="text-8xl font-bold text-amber-200">about</h1>
 			<div class="group -mt-10 flex items-center">
 				<a
-					href="https://github.com/MainLah"
+					href="https://drive.google.com/file/d/13mZvF7givtMcR36J0V1Cc3nkM1nXLmv0/view?usp=sharing"
+					target="_blank"
 					class="inline rounded-[2rem] border border-amber-200 px-6 py-3 text-lg text-amber-200 group-hover:bg-lime-900"
 				>
 					Curriculum Vitae
@@ -94,5 +83,53 @@
 				{/each}
 			</Marquee>
 		</div>
+	</div>
+</section>
+<section id="projects" class="mt-16 flex min-h-screen flex-col items-center justify-center gap-16">
+	<div class="flex w-full justify-center gap-32">
+		<div class="group mt-26 flex items-center">
+			<a
+				href="https://github.com/MainLah"
+				target="_blank"
+				class="inline rounded-[2rem] border border-amber-200 px-6 py-3 text-lg text-amber-200 group-hover:bg-lime-900"
+			>
+				View All
+			</a>
+
+			<span
+				class="rotate-z-90 cursor-pointer rounded-full border border-amber-200 px-3 py-3 group-hover:bg-lime-900"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="#fee685"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="lucide lucide-arrow-up-left-icon lucide-arrow-up-left"
+					><path d="M7 17V7h10" /><path d="M17 17 7 7" /></svg
+				>
+			</span>
+		</div>
+		<div class="flex flex-col items-end text-end">
+			<h1 class="pb-6 text-8xl font-bold text-amber-200">Projects</h1>
+			<p class="w-3/5 text-lg text-amber-200">
+				Browse through a variety of works that I have done in the past.
+			</p>
+		</div>
+	</div>
+	<div class="my-8 flex w-full flex-col items-center">
+		{#each projects as project}
+			<Projects
+				year={project.year}
+				name={project.name}
+				description={project.description}
+				href={project.href}
+				className={project?.className}
+			/>
+		{/each}
 	</div>
 </section>
