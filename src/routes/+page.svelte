@@ -6,10 +6,10 @@
 
 <section id="home" class="flex items-center justify-center md:min-h-screen">
 	<div
-		class="relative w-[calc(100vw-1.5rem)] overflow-hidden rounded-[3rem] bg-amber-200 shadow-xl md:h-[calc(100vh-1rem)]"
+		class="relative my-8 w-[calc(100vw-1.5rem)] overflow-hidden rounded-[3rem] bg-amber-200 shadow-xl md:my-0 md:h-[calc(100vh-1rem)]"
 	>
-		<div class="pointer-events-none absolute inset-0 hidden select-none md:block">
-			{#each Array(10) as _}
+		<div class="pointer-events-none absolute inset-0 block select-none">
+			{#each Array(30) as _}
 				<h1
 					class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
 				>
@@ -81,7 +81,7 @@
 		</div>
 	</div>
 	<div class="w-full">
-		<div class="h-[50vh] w-full">
+		<div class="mb-16 w-full md:h-[50vh]">
 			<Marquee speed={60} play={true}>
 				{#each tools1 as icon}
 					<img src={icon} alt={icon} class="mx-5 my-4 w-[50px] md:mx-25 md:w-[150px]" />
@@ -177,8 +177,8 @@
 	<div
 		class="relative my-8 w-[calc(100vw-1.5rem)] overflow-hidden rounded-[3rem] bg-amber-200 py-12 shadow-xl md:my-0 md:h-[calc(100vh-1rem)]"
 	>
-		<div class="pointer-events-none absolute inset-0 hidden select-none md:block">
-			{#each Array(10) as _}
+		<div class="pointer-events-none absolute inset-0 block select-none">
+			{#each Array(30) as _}
 				<h1
 					class="w-full text-center text-[6vw] tracking-[2rem] whitespace-nowrap text-black/10 lg:text-[5vw]/none"
 				>
